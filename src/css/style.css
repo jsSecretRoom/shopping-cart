@@ -1,0 +1,170 @@
+@font-face {
+  font-family: "KeaniaOne";
+  src: url(../fonts/KeaniaOne-Regular.ttf);
+}
+body {
+  background: url("../img/background.svg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+body .decorativ-list {
+  width: 1440px;
+  height: auto;
+}
+body .decorativ-list .conteinr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  padding: 10px 0;
+  background-color: rgb(67, 64, 64);
+}
+body .decorativ-list .conteinr header {
+  width: 100vw;
+  text-align: center;
+}
+body .decorativ-list .conteinr header p {
+  font-size: 32px;
+}
+@media (min-width: 1420px) {
+  body .decorativ-list .conteinr header {
+    width: 1420px;
+  }
+}
+body .decorativ-list .conteinr main .sliders {
+  width: 100vw;
+}
+@media (min-width: 1420px) {
+  body .decorativ-list .conteinr main .sliders {
+    width: 1420px;
+  }
+}
+body .decorativ-list .conteinr main .sliders .wraper-conteiner {
+  overflow-x: hidden;
+}
+body .decorativ-list .conteinr main .sliders .wraper-conteiner .wraper {
+  position: relative;
+}
+body .decorativ-list .conteinr main .sliders .wraper-conteiner .wraper .left, body .decorativ-list .conteinr main .sliders .wraper-conteiner .wraper .right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+body .decorativ-list .conteinr main .sliders .wraper-conteiner .wraper .left img, body .decorativ-list .conteinr main .sliders .wraper-conteiner .wraper .right img {
+  width: 40px;
+}
+@media (min-width: 568px) {
+  body .decorativ-list .conteinr main .sliders .wraper-conteiner .wraper .left img, body .decorativ-list .conteinr main .sliders .wraper-conteiner .wraper .right img {
+    width: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  body .decorativ-list .conteinr main .sliders .wraper-conteiner .wraper .left img, body .decorativ-list .conteinr main .sliders .wraper-conteiner .wraper .right img {
+    width: 70px;
+  }
+}
+body .decorativ-list .conteinr main .sliders .wraper-conteiner .wraper .carousel {
+  display: flex;
+}
+body .decorativ-list .conteinr main .sliders .wraper-conteiner .wraper .carousel .foto-slid {
+  flex: 0 0 auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  width: 100%;
+}
+body .decorativ-list .conteinr main .sliders .wraper-conteiner .wraper .carousel .foto-slid img {
+  display: block;
+  width: 100%;
+}
+body .decorativ-list .conteinr main .sliders .wraper-conteiner .wraper .carousel .foto-slid .fetchimg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+}
+@media (min-width: 568px) {
+  body .decorativ-list .conteinr main .sliders .wraper-conteiner .wraper .carousel .foto-slid {
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  body .decorativ-list .conteinr main .sliders .wraper-conteiner .wraper .carousel .foto-slid {
+    width: 33.3333333333%;
+  }
+}
+body .decorativ-list .conteinr main .sliders .wraper-conteiner .wraper .right {
+  right: 20px;
+}
+body .decorativ-list .conteinr main .sliders .wraper-conteiner .wraper .left {
+  left: 20px;
+}
+body .decorativ-list .conteinr main .chac-noris-continer {
+  background-color: rgb(231, 123, 21);
+  border-radius: 10px;
+  margin: 10px 0 0 0;
+}
+body .decorativ-list .conteinr main .chac-noris-continer .chac-noris-rofls {
+  width: 100vw;
+  height: 400px;
+  text-align: center;
+}
+body .decorativ-list .conteinr main .chac-noris-continer .chac-noris-rofls h1 {
+  font-size: 30px;
+}
+body .decorativ-list .conteinr main .chac-noris-continer .chac-noris-rofls .rofl {
+  font-size: 26px;
+  padding: 10px;
+}
+body .decorativ-list .conteinr main .chac-noris-continer .chac-noris-rofls .new-rofl {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(67, 64, 64);
+  font-size: 26px;
+  border-radius: 50px;
+}
+body .decorativ-list .conteinr main .chac-noris-continer .chac-noris-rofls .new-rofl:hover {
+  background-color: rgb(68, 180, 94);
+}
+@media (min-width: 1420px) {
+  body .decorativ-list .conteinr main .chac-noris-continer .chac-noris-rofls {
+    width: 1420px;
+  }
+}
+body .decorativ-list .conteinr footer {
+  width: 100vw;
+}
+@media (min-width: 1420px) {
+  body .decorativ-list .conteinr footer {
+    width: 1420px;
+  }
+}
+body .decorativ-list .conteinr footer .info-block {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid red;
+  border-radius: 10px 10px 0 0;
+  background-color: rgb(231, 123, 21);
+}
+body .decorativ-list .conteinr footer .info-block p {
+  font-family: "KeaniaOne";
+  font-size: 32px;
+}
+body .decorativ-list .conteinr footer .links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  background-color: rgb(23, 70, 255);
+  border-radius: 0 0 10px 10px;
+}
+body .decorativ-list .conteinr footer .links a img {
+  height: 45px;
+}

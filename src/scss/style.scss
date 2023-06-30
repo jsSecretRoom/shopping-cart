@@ -1,0 +1,162 @@
+@font-face{
+    font-family: 'KeaniaOne';
+    src: url(../fonts/KeaniaOne-Regular.ttf);
+}
+
+body{
+    background: url("../img/background.svg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    .decorativ-list{
+        width: 1440px;
+        height: auto;
+        .conteinr{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 10px;
+            padding: 10px 0;
+            background-color: rgb(67, 64, 64);
+            header{
+                width: 100vw;
+                text-align: center;
+                p{
+                    font-size: 32px;
+                }
+                @media (min-width: 1420px) {
+                    width: 1420px;
+                }
+            }
+            main{
+                
+                .sliders{
+                    width: 100vw;
+                    @media (min-width: 1420px) {
+                        width: 1420px;
+                    }
+                    .wraper-conteiner {
+                        overflow-x: hidden;
+                        .wraper {
+                            position: relative;
+                            .left, .right {
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                background: none;
+                                border: none;
+                                cursor: pointer;
+                                z-index: 1;
+                                img {
+                                    width: 40px;
+                                    @media (min-width: 568px) {
+                                        width: 50px;
+                                    }
+                                    @media (min-width: 1024px) {
+                                        width: 70px;
+                                    }
+                                }
+                            }
+                            
+                            .carousel {
+                                display: flex;
+                                .foto-slid {
+                                    flex: 0 0 auto;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    user-select: none;
+                                    width: calc(100%);
+                                    img {
+                                        display: block;
+                                        width: 100%;
+                                    }
+                                    .fetchimg{
+                                        object-fit: cover;
+                                        height: 300px;
+                                    }
+                                    @media (min-width: 568px) {
+                                        width: calc(100% / 2);
+                                    }
+                                    @media (min-width: 1024px) {
+                                        width: calc(100% / 3);
+                                    }
+                                    
+                                }
+                            }
+                            
+                            .right {
+                                right: 20px;
+                            }
+                            
+                            .left {
+                                left: 20px;
+                            }
+                        }
+                    }
+                }
+                .chac-noris-continer{
+                    background-color: rgb(231, 123, 21);
+                    border-radius: 10px;
+                    margin: 10px 0 0 0;
+                    .chac-noris-rofls{
+                        width: 100vw;
+                        height: 400px;
+                        text-align: center;
+                        h1{
+                            font-size: 30px;
+                        }
+                        .rofl{
+                            font-size: 26px;
+                            padding: 10px;
+                        }
+                        .new-rofl{
+                            width: 200px;
+                            height: 50px;
+                            background-color: rgb(67, 64, 64);
+                            font-size: 26px;
+                            border-radius: 50px;
+                        }
+                        .new-rofl:hover{
+                            background-color: rgb(68, 180, 94);
+                        }
+                        @media (min-width: 1420px) {
+                            width: 1420px;
+                        }
+                    }
+                }
+            }
+            footer{
+                width: 100vw;
+                
+                
+                @media (min-width: 1420px) {
+                    width: 1420px;
+                }
+                .info-block {
+                    text-align: center;
+                    padding: 20px 0;
+                    border-bottom: 1px solid red ;
+                    border-radius: 10px 10px 0 0;
+                    background-color: rgb(231, 123, 21);
+                    p{
+                        font-family: 'KeaniaOne';
+                        font-size: 32px;
+                    }
+                }
+                .links {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    height: 100px;
+                    background-color: rgb(23, 70, 255);
+                    border-radius: 0 0 10px 10px;
+                    a{
+                        img{
+                            height: 45px;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}
