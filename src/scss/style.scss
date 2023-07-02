@@ -103,14 +103,15 @@ body{
                         width: 100vw;
                         background-color: rgb(231, 123, 21);
                         border-radius: 10px;
+                        
                         @media (min-width: 1420px) {
                             width: 1420px;
                         }
-                        .smartfons{
+                        .cards-style{
                             display: flex;
                             flex-wrap: wrap;
                             justify-content: space-around;
-                            
+                            border-bottom: 4px solid red;
                             .card {
                                 position: relative;
                                 background-color: aquamarine;
