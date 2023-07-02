@@ -52,7 +52,7 @@ body{
                                 height: 80px;
 
                             }
-                            p{
+                            .counter{
                                 font-family: 'KeaniaOne';
                                 position: absolute;
                                 border-radius: 50px;
@@ -65,6 +65,7 @@ body{
                                 align-items: center;
                                 justify-content: center;
                             }
+                            
                         }
                     }
                     .filtres {
@@ -122,12 +123,10 @@ body{
                                     top: 10px;
                                     right: 10px;
                                     .add-to-bag {
-                                        background: none;
-                                        img{
-                                            
-                                            height: 30px;
-                                            width: 30px;
-                                        }
+                                        background: url('../img/Favorite.svg') 0 0/cover no-repeat;
+                                    }
+                                    .add-to-bag.active{
+                                        background: url('../img/Favorite_duotone.svg') 0 0/cover no-repeat;
                                     }
                                 }
                                 .grup-card {

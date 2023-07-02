@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-  function myCards(objdata, typeOfProduct, typeSelector ){
+  let counterValue = 0;
+
+  function myCards(objdata, typeOfProduct, typeSelector) {
     class Product {
-      constructor(name, description, fotoLink, firstPrice, secondPrice, parentSelector){
+      constructor(name, description, fotoLink, firstPrice, secondPrice, parentSelector) {
         this.name = name;
         this.description = description;
         this.fotoLink = fotoLink;
@@ -9,14 +11,15 @@ document.addEventListener('DOMContentLoaded', function() {
         this.secondPrice = secondPrice;
         this.parent = document.querySelector(parentSelector);
       }
-        
-      render(){
+
+      render() {
         const element = document.createElement('div');
+        const favoriteImgSrc = "./src/img/Favorite.svg";
         element.innerHTML = `
         <div class="card">
           <div class="ficha">
               <button class="add-to-bag">
-                  <img src="./src/img/Favorite.svg" alt="">
+                  <img src="${favoriteImgSrc}" alt="">
               </button>
           </div>
           <div class="grup-card">
@@ -29,11 +32,27 @@ document.addEventListener('DOMContentLoaded', function() {
                   <p class="real-price">${this.secondPrice}</p>
               </a>
           </div>
-        </div>`
+        </div>`;
         this.parent.append(element);
+
+        const addToBagButton = element.querySelector('.add-to-bag');
+        const counterElement = document.querySelector('.counter');
+
+        addToBagButton.addEventListener('click', () => {
+          const img = addToBagButton.querySelector('img');
+          if (addToBagButton.classList.contains('active')) {
+            img.src = favoriteImgSrc;
+            counterValue--;
+          } else {
+            img.src = "./src/img/Favorite_duotone.svg";
+            counterValue++;
+          }
+          addToBagButton.classList.toggle('active');
+          counterElement.textContent = counterValue;
+        });
       }
     }
-    
+
     fetch(objdata)
       .then(response => response.json())
       .then(data => {
@@ -47,11 +66,13 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   }
 
-  myCards('data.json','smartphones', '#smartfons' );
-  myCards('data.json','smartphones', '#cars' );
-  myCards('data.json','smartphones', '#pc' );
-  myCards('data.json','smartphones', '#tables' );
-  myCards('data.json','smartphones', '#soffa' );
-  myCards('data.json','smartphones', '#house' );
+  myCards('data.json', 'smartphones', '#smartfons');
+  myCards('data.json', 'smartphones', '#cars');
+  myCards('data.json', 'smartphones', '#pc');
+  myCards('data.json', 'smartphones', '#tables');
+  myCards('data.json', 'smartphones', '#soffa');
+  myCards('data.json', 'smartphones', '#house');
 });
+
+
 

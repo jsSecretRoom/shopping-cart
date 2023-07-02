@@ -59,7 +59,7 @@ body .decorativ-list .conteinr main .shoping-conteiner .bag .show-bag img {
   width: 80px;
   height: 80px;
 }
-body .decorativ-list .conteinr main .shoping-conteiner .bag .show-bag p {
+body .decorativ-list .conteinr main .shoping-conteiner .bag .show-bag .counter {
   font-family: "KeaniaOne";
   position: absolute;
   border-radius: 50px;
@@ -138,11 +138,10 @@ body .decorativ-list .conteinr main .shoping-conteiner .shoping-cards .cards-sty
   right: 10px;
 }
 body .decorativ-list .conteinr main .shoping-conteiner .shoping-cards .cards-style .card .ficha .add-to-bag {
-  background: none;
+  background: url("../img/Favorite.svg") 0 0/cover no-repeat;
 }
-body .decorativ-list .conteinr main .shoping-conteiner .shoping-cards .cards-style .card .ficha .add-to-bag img {
-  height: 30px;
-  width: 30px;
+body .decorativ-list .conteinr main .shoping-conteiner .shoping-cards .cards-style .card .ficha .add-to-bag.active {
+  background: url("../img/Favorite_duotone.svg") 0 0/cover no-repeat;
 }
 body .decorativ-list .conteinr main .shoping-conteiner .shoping-cards .cards-style .card .grup-card {
   width: 200px;
