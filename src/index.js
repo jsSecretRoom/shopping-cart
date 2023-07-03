@@ -14,12 +14,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
       render() {
         const element = document.createElement('div');
-        const favoriteImgSrc = "./src/img/Favorite.svg";
+        const hardOff = "./src/img/Favorite.svg";
+        const hardON = "./src/img/Favorite_duotone.svg";
         element.innerHTML = `
         <div class="card">
           <div class="ficha">
               <button class="add-to-bag">
-                  <img src="${favoriteImgSrc}" alt="">
+                  <img src="${hardOff}" alt="">
               </button>
           </div>
           <div class="grup-card">
@@ -41,10 +42,10 @@ document.addEventListener('DOMContentLoaded', function() {
         addToBagButton.addEventListener('click', () => {
           const img = addToBagButton.querySelector('img');
           if (addToBagButton.classList.contains('active')) {
-            img.src = favoriteImgSrc;
+            img.src = hardOff;
             counterValue--;
           } else {
-            img.src = "./src/img/Favorite_duotone.svg";
+            img.src = hardON;
             counterValue++;
           }
           addToBagButton.classList.toggle('active');
@@ -54,24 +55,24 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     fetch(objdata)
-      .then(response => response.json())
-      .then(data => {
-        const cardsData = data[typeOfProduct];
-        cardsData.forEach(({ name, description, fotoLink, firstPrice, secondPrice }) => {
-          new Product(name, description, fotoLink, firstPrice, secondPrice, typeSelector).render();
-        });
-      })
-      .catch(error => {
-        console.error('Error fetching data:', error);
+    .then(response => response.json())
+    .then(data => {
+      const cardsData = data[typeOfProduct];
+      cardsData.forEach(({ name, description, fotoLink, firstPrice, secondPrice }) => {
+        new Product(name, description, fotoLink, firstPrice, secondPrice, typeSelector).render();
       });
+    })
+    .catch(error => {
+      console.error('Error fetching data:', error);
+    });
   }
 
   myCards('data.json', 'smartphones', '#smartfons');
-  myCards('data.json', 'smartphones', '#cars');
-  myCards('data.json', 'smartphones', '#pc');
-  myCards('data.json', 'smartphones', '#tables');
-  myCards('data.json', 'smartphones', '#soffa');
-  myCards('data.json', 'smartphones', '#house');
+  myCards('data.json', 'cars', '#cars');
+  myCards('data.json', 'pc', '#pc');
+  myCards('data.json', 'tables', '#tables');
+  myCards('data.json', 'soffa', '#soffa');
+  myCards('data.json', 'house', '#house');
 });
 
 

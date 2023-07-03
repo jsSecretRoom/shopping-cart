@@ -3,42 +3,42 @@
     {
       "name": "phone1",
       "description": "gudphone",
-      "fotoLink": "./src/img/download 1.jpg",
+      "fotoLink": "./src/img/phone/phone1.jpg",
       "firstPrice": "3333",
       "secondPrice": "4444"
     },
     {
       "name": "phone2",
       "description": "very gud phone",
-      "fotoLink": "./src/img/images 1.jpg",
+      "fotoLink": "./src/img/phone/phone2.jpg",
       "firstPrice": "4444",
       "secondPrice": "5555"
     },
     {
       "name": "phone1",
       "description": "gudphone",
-      "fotoLink": "./src/img/download 1.jpg",
+      "fotoLink": "./src/img/phone/phone3.jpg",
       "firstPrice": "3333",
       "secondPrice": "4444"
     },
     {
       "name": "phone1",
       "description": "gudphone",
-      "fotoLink": "./src/img/download 1.jpg",
+      "fotoLink": "./src/img/phone/phone1.jpg",
       "firstPrice": "3333",
       "secondPrice": "4444"
     },
     {
-      "name": "phone1",
-      "description": "gudphone",
-      "fotoLink": "./src/img/download 1.jpg",
-      "firstPrice": "3333",
-      "secondPrice": "4444"
+      "name": "phone2",
+      "description": "very gud phone",
+      "fotoLink": "./src/img/phone/phone2.jpg",
+      "firstPrice": "4444",
+      "secondPrice": "5555"
     },
     {
       "name": "phone1",
       "description": "gudphone",
-      "fotoLink": "./src/img/download 1.jpg",
+      "fotoLink": "./src/img/phone/phone3.jpg",
       "firstPrice": "3333",
       "secondPrice": "4444"
     }
@@ -48,30 +48,87 @@
     {
       "name": "phone1",
       "description": "gudphone",
-      "fotoLink": "./src/img/download 1.jpg",
+      "fotoLink": "./src/img/cars/car1.webp",
       "firstPrice": "3333",
       "secondPrice": "4444"
     },
     {
       "name": "phone2",
       "description": "very gud phone",
-      "fotoLink": "./src/img/images 1.jpg",
+      "fotoLink": "./src/img/cars/car2.jpg",
       "firstPrice": "4444",
       "secondPrice": "5555"
-    }
-  ],
-  "PC": [
+    },
+    {
+      "name": "phone2",
+      "description": "very gud phone",
+      "fotoLink": "./src/img/cars/car3.jpg",
+      "firstPrice": "4444",
+      "secondPrice": "5555"
+    },
     {
       "name": "phone1",
       "description": "gudphone",
-      "fotoLink": "./src/img/download 1.jpg",
+      "fotoLink": "./src/img/cars/car1.webp",
       "firstPrice": "3333",
       "secondPrice": "4444"
     },
     {
       "name": "phone2",
       "description": "very gud phone",
-      "fotoLink": "./src/img/images 1.jpg",
+      "fotoLink": "./src/img/cars/car2.jpg",
+      "firstPrice": "4444",
+      "secondPrice": "5555"
+    },
+    {
+      "name": "phone2",
+      "description": "very gud phone",
+      "fotoLink": "./src/img/cars/car3.jpg",
+      "firstPrice": "4444",
+      "secondPrice": "5555"
+    }
+    
+  ],
+  "pc": [
+    {
+      "name": "phone1",
+      "description": "gudphone",
+      "fotoLink": "./src/img/pc/pc1.jpg",
+      "firstPrice": "3333",
+      "secondPrice": "4444"
+    },
+    {
+      "name": "phone2",
+      "description": "very gud phone",
+      "fotoLink": "./src/img/pc/pc2.jpg",
+      "firstPrice": "4444",
+      "secondPrice": "5555"
+    },
+    {
+      "name": "phone2",
+      "description": "very gud phone",
+      "fotoLink": "./src/img/pc/pc3.jpg",
+      "firstPrice": "4444",
+      "secondPrice": "5555"
+    },
+    {
+      "name": "phone1",
+      "description": "gudphone",
+      "fotoLink": "./src/img/pc/pc1.jpg",
+      "firstPrice": "3333",
+      "secondPrice": "4444"
+    },
+    {
+      "name": "phone2",
+      "description": "very gud phone",
+      "fotoLink": "./src/img/pc/pc2.jpg",
+      "firstPrice": "4444",
+      "secondPrice": "5555"
+    },
+    {
+      "name": "phone2",
+      "description": "very gud phone",
+      "fotoLink": "./src/img/pc/pc3.jpg",
       "firstPrice": "4444",
       "secondPrice": "5555"
     }
@@ -80,14 +137,42 @@
     {
       "name": "phone1",
       "description": "gudphone",
-      "fotoLink": "./src/img/download 1.jpg",
+      "fotoLink": "./src/img/tables/table1.jpg",
       "firstPrice": "3333",
       "secondPrice": "4444"
     },
     {
       "name": "phone2",
       "description": "very gud phone",
-      "fotoLink": "./src/img/images 1.jpg",
+      "fotoLink": "./src/img/tables/table2.webp",
+      "firstPrice": "4444",
+      "secondPrice": "5555"
+    },
+    {
+      "name": "phone2",
+      "description": "very gud phone",
+      "fotoLink": "./src/img/tables/table3.jpg",
+      "firstPrice": "4444",
+      "secondPrice": "5555"
+    },
+    {
+      "name": "phone1",
+      "description": "gudphone",
+      "fotoLink": "./src/img/tables/table1.jpg",
+      "firstPrice": "3333",
+      "secondPrice": "4444"
+    },
+    {
+      "name": "phone2",
+      "description": "very gud phone",
+      "fotoLink": "./src/img/tables/table2.webp",
+      "firstPrice": "4444",
+      "secondPrice": "5555"
+    },
+    {
+      "name": "phone2",
+      "description": "very gud phone",
+      "fotoLink": "./src/img/tables/table3.jpg",
       "firstPrice": "4444",
       "secondPrice": "5555"
     }
@@ -96,32 +181,87 @@
     {
       "name": "phone1",
       "description": "gudphone",
-      "fotoLink": "./src/img/download 1.jpg",
+      "fotoLink": "./src/img/soffa/sofa1.webp",
       "firstPrice": "3333",
       "secondPrice": "4444"
     },
     {
       "name": "phone2",
       "description": "very gud phone",
-      "fotoLink": "./src/img/images 1.jpg",
+      "fotoLink": "./src/img/soffa/sofa2.jpg",
+      "firstPrice": "4444",
+      "secondPrice": "5555"
+    },
+    {
+      "name": "phone2",
+      "description": "very gud phone",
+      "fotoLink": "./src/img/soffa/sofa3.webp",
+      "firstPrice": "4444",
+      "secondPrice": "5555"
+    },
+    {
+      "name": "phone1",
+      "description": "gudphone",
+      "fotoLink": "./src/img/soffa/sofa1.webp",
+      "firstPrice": "3333",
+      "secondPrice": "4444"
+    },
+    {
+      "name": "phone2",
+      "description": "very gud phone",
+      "fotoLink": "./src/img/soffa/sofa2.jpg",
+      "firstPrice": "4444",
+      "secondPrice": "5555"
+    },
+    {
+      "name": "phone2",
+      "description": "very gud phone",
+      "fotoLink": "./src/img/soffa/sofa3.webp",
       "firstPrice": "4444",
       "secondPrice": "5555"
     }
   ],
-  "soffasoffa": [
+  "house": [
     {
       "name": "phone1",
       "description": "gudphone",
-      "fotoLink": "./src/img/download 1.jpg",
+      "fotoLink": "./src/img/house/house1.jpg",
       "firstPrice": "3333",
       "secondPrice": "4444"
     },
     {
       "name": "phone2",
       "description": "very gud phone",
-      "fotoLink": "./src/img/images 1.jpg",
+      "fotoLink": "./src/img/house/house2.jpg",
       "firstPrice": "4444",
       "secondPrice": "5555"
+    },{
+      "name": "phone1",
+      "description": "gudphone",
+      "fotoLink": "./src/img/house/house3.jpg",
+      "firstPrice": "3333",
+      "secondPrice": "4444"
+    },
+    {
+      "name": "phone1",
+      "description": "gudphone",
+      "fotoLink": "./src/img/house/house1.jpg",
+      "firstPrice": "3333",
+      "secondPrice": "4444"
+    },
+    {
+      "name": "phone2",
+      "description": "very gud phone",
+      "fotoLink": "./src/img/house/house2.jpg",
+      "firstPrice": "4444",
+      "secondPrice": "5555"
+    },{
+      "name": "phone1",
+      "description": "gudphone",
+      "fotoLink": "./src/img/house/house3.jpg",
+      "firstPrice": "3333",
+      "secondPrice": "4444"
     }
+    
   ]
 }

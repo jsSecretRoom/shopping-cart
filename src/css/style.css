@@ -147,8 +147,12 @@ body .decorativ-list .conteinr main .shoping-conteiner .shoping-cards .cards-sty
   width: 200px;
   padding: 10px;
 }
+body .decorativ-list .conteinr main .shoping-conteiner .shoping-cards .cards-style .card .grup-card .product-img {
+  width: 180px;
+  height: 220px;
+}
 body .decorativ-list .conteinr main .shoping-conteiner .shoping-cards .cards-style .card .grup-card .product-img img {
-  border-radius: 25px;
+  border-radius: 20px;
   width: 100%;
   height: 100%;
   padding: 5px;
