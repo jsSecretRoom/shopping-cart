@@ -67,7 +67,9 @@ body{
                             }
                             
                         }
+                        
                     }
+                    
                     .filtres {
                         width: 100vw;
                         background-color: rgb(231, 123, 21);
@@ -76,7 +78,7 @@ body{
                         justify-content: space-around;
                         flex-direction: column;
                         align-items: center;
-                        @media (min-width: 768px) {
+                        @media (min-width: 1024px) {
                             flex-direction: row;
                         }
                         @media (min-width: 1420px) {
@@ -92,9 +94,10 @@ body{
                                 height: 35px;
                                 background-color: brown;
                                 border-radius: 50px;
-                                font-size: 22px;
+                                font-size: 20px;
                                 @media (min-width: 768px) {
                                     width: 115px;
+                                    font-size: 22px;
                                 }
                             }
                             
@@ -167,6 +170,7 @@ body{
                             }
                         }
                     }
+                    
                 }
             }
             footer{
@@ -202,5 +206,22 @@ body{
                 }
             }
         } 
+    }
+    .pop-up {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(129, 124, 124, 0.534);
+        z-index: 2;
+        .pop-up-conteiner {
+            .pop-up-info {
+                p{
+                }
+                .exit {
+                }
+            }
+            .favorit-cards {
+            }
+        }
     }
 }

@@ -86,13 +86,19 @@ document.addEventListener('DOMContentLoaded', function() {
       button.addEventListener('click', function() {
         const category = button.textContent.trim();
         
-        productCards.forEach(card => {
-          if (card.id === category) {
-            card.style.display = 'flex'; // Show the matching card
-          } else {
-            card.style.display = 'none'; // Hide non-matching cards
-          }
-        });
+        if (category === 'show-All') {
+          productCards.forEach(card => {
+            card.style.display = 'flex'; // Показать все блоки товаров
+          });
+        } else {
+          productCards.forEach(card => {
+            if (card.id === category) {
+              card.style.display = 'flex'; // Показать блоки товаров, соответствующие категории
+            } else {
+              card.style.display = 'none'; // Скрыть блоки товаров, несоответствующие категории
+            }
+          });
+        }
       });
     });
   }

@@ -81,7 +81,7 @@ body .decorativ-list .conteinr main .shoping-conteiner .filtres {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   body .decorativ-list .conteinr main .shoping-conteiner .filtres {
     flex-direction: row;
   }
@@ -103,11 +103,12 @@ body .decorativ-list .conteinr main .shoping-conteiner .filtres .grup .filter {
   height: 35px;
   background-color: brown;
   border-radius: 50px;
-  font-size: 22px;
+  font-size: 20px;
 }
 @media (min-width: 768px) {
   body .decorativ-list .conteinr main .shoping-conteiner .filtres .grup .filter {
     width: 115px;
+    font-size: 22px;
   }
 }
 body .decorativ-list .conteinr main .shoping-conteiner .shoping-cards {
@@ -206,4 +207,11 @@ body .decorativ-list .conteinr footer .links {
 }
 body .decorativ-list .conteinr footer .links a img {
   height: 45px;
+}
+body .pop-up {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(129, 124, 124, 0.534);
+  z-index: 2;
 }
