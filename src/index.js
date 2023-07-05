@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   let counterValue = 0;
+  
 
   function myCards(objdata, typeOfProduct, typeSelector) {
     class Product {
@@ -73,6 +74,43 @@ document.addEventListener('DOMContentLoaded', function() {
   myCards('data.json', 'tables', '#tables');
   myCards('data.json', 'soffa', '#soffa');
   myCards('data.json', 'house', '#house');
+
+  function sortProduct(buttons, product, containerButtons, containerCards) {
+    const buttonsContainer = document.querySelector(containerButtons);
+    const cardsContainer = document.querySelector(containerCards);
+  
+    const buttonsFilter = buttonsContainer.querySelectorAll(buttons);
+    const productCards = cardsContainer.querySelectorAll(product);
+  
+    buttonsFilter.forEach(button => {
+      button.addEventListener('click', function() {
+        const category = button.textContent.trim();
+        
+        productCards.forEach(card => {
+          if (card.id === category) {
+            card.style.display = 'flex'; // Show the matching card
+          } else {
+            card.style.display = 'none'; // Hide non-matching cards
+          }
+        });
+      });
+    });
+  }
+  
+  sortProduct('.filter', '.cards-style', '.filtres', '.shoping-cards');
+
+  function setCookie(name, value, days) {
+    var expires = '';
+  
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = '; expires=' + date.toUTCString();
+    }
+  
+    document.cookie = name + '=' + encodeURIComponent(value) + expires + '; path=/';
+  }
+  setCookie('counterValue', counterValue, 7);
 });
 
 
