@@ -39,6 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const addToBagButton = element.querySelector('.add-to-bag');
         const counterElement = document.querySelector('.counter');
+        
+        const favorits = document.querySelector('.favorit-cards');
 
         addToBagButton.addEventListener('click', () => {
           const img = addToBagButton.querySelector('img');
@@ -117,6 +119,20 @@ document.addEventListener('DOMContentLoaded', function() {
     document.cookie = name + '=' + encodeURIComponent(value) + expires + '; path=/';
   }
   setCookie('counterValue', counterValue, 7);
+
+  function showBag(buttonShow, buttonClose, popUp ){
+    const bagButtonShow = document.querySelector(buttonShow);
+    const exitButton = document.querySelector(buttonClose);
+    const popUpWindow = document.querySelector(popUp);
+
+    bagButtonShow.addEventListener('click', function(){
+      popUpWindow.style.display = 'flex';
+    });
+    exitButton.addEventListener('click', function(){
+      popUpWindow.style.display = 'none';
+    });
+  }
+  showBag('.show-bag', '.exit', '.pop-up');
 });
 
 

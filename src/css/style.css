@@ -214,4 +214,98 @@ body .pop-up {
   height: 100%;
   background-color: rgba(129, 124, 124, 0.534);
   z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+body .pop-up .pop-up-conteiner {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+body .pop-up .pop-up-conteiner .exit {
+  background: none;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+body .pop-up .pop-up-conteiner .exit img {
+  width: 50px;
+  height: 50px;
+}
+body .pop-up .pop-up-conteiner .pop-up-info {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  background-color: chocolate;
+}
+body .pop-up .pop-up-conteiner .pop-up-info p {
+  font-size: 28px;
+}
+body .pop-up .pop-up-conteiner .favorit-cards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 4px solid red;
+  scroll-behavior: auto;
+}
+body .pop-up .pop-up-conteiner .favorit-cards .card {
+  position: relative;
+  background-color: aquamarine;
+  border-radius: 10px;
+  margin: 10px;
+}
+body .pop-up .pop-up-conteiner .favorit-cards .card .ficha {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+body .pop-up .pop-up-conteiner .favorit-cards .card .ficha .add-to-bag {
+  background: url("../img/Favorite.svg") 0 0/cover no-repeat;
+}
+body .pop-up .pop-up-conteiner .favorit-cards .card .ficha .add-to-bag.active {
+  background: url("../img/Favorite_duotone.svg") 0 0/cover no-repeat;
+}
+body .pop-up .pop-up-conteiner .favorit-cards .card .grup-card {
+  width: 200px;
+  padding: 10px;
+}
+body .pop-up .pop-up-conteiner .favorit-cards .card .grup-card .product-img {
+  width: 180px;
+  height: 220px;
+}
+body .pop-up .pop-up-conteiner .favorit-cards .card .grup-card .product-img img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+body .pop-up .pop-up-conteiner .favorit-cards .card .grup-card .product-info {
+  height: 130px;
+  background: none;
+  text-align: start;
+}
+body .pop-up .pop-up-conteiner .favorit-cards .card .grup-card .product-info .product-desck {
+  font-size: 16px;
+}
+body .pop-up .pop-up-conteiner .favorit-cards .card .grup-card .product-info .product-desck .product {
+  font-size: 20px;
+}
+body .pop-up .pop-up-conteiner .favorit-cards .card .grup-card .product-info .unreal-price {
+  font-size: 24px;
+  color: gray;
+  text-decoration: line-through;
+}
+body .pop-up .pop-up-conteiner .favorit-cards .card .grup-card .product-info .real-price {
+  font-size: 34px;
+  color: red;
+}
+@media (min-width: 800px) {
+  body .pop-up .pop-up-conteiner {
+    width: 880px;
+    height: 100%;
+  }
 }
